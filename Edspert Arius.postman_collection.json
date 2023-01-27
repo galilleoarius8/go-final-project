@@ -1,0 +1,1455 @@
+{
+	"info": {
+		"_postman_id": "29162ab5-431e-453d-a288-df409de95982",
+		"name": "Edspert Arius",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24280411"
+	},
+	"item": [
+		{
+			"name": "album",
+			"item": [
+				{
+					"name": "Get Album by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/albums/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"albums",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Album by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/albums/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"albums",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:23:25 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "112"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "1"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								},
+								{
+									"key": "connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"Seribu Malam\",\n        \"artist_id\": 1,\n        \"price\": 25000\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Albums",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/albums?limit=2&offset=0&artist_id=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"albums"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "artist_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Albums",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/albums",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"albums"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:23:04 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "412"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "4"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"Seribu Malam\",\n            \"artist_id\": 1,\n            \"price\": 25000\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Taman Langit\",\n            \"artist_id\": 1,\n            \"price\": 26000\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Bintang Di Surga\",\n            \"artist_id\": 1,\n            \"price\": 27000\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Tempat Terindah\",\n            \"artist_id\": 2,\n            \"price\": 20000\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Melayang\",\n            \"artist_id\": 2,\n            \"price\": 20000\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Surgamu\",\n            \"artist_id\": 3,\n            \"price\": 20000\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get All Albums",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/albums?limit=2&offset=0&artist_id=2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"albums"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "2"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "artist_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:27:20 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "173"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "5"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": [\n        {\n            \"id\": 4,\n            \"title\": \"Tempat Terindah\",\n            \"artist_id\": 2,\n            \"price\": 20000\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Melayang\",\n            \"artist_id\": 2,\n            \"price\": 20000\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Album",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Seribu Malam\",\n    \"artist_id\": 1,\n    \"price\": 25000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/albums",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"albums"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Album",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Bintang Di Surga\",\n    \"artist_id\": 1,\n    \"price\": 27000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/albums",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"albums"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:22:00 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "116"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "8"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 3,\n        \"title\": \"Bintang Di Surga\",\n        \"artist_id\": 1,\n        \"price\": 27000\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Album",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Malam Seribu Malam\",\n    \"artist_id\": 1,\n    \"price\": 27000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/albums/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"albums",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Album",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Malam Seribu Malam\",\n    \"artist_id\": 1,\n    \"price\": 27000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/albums/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"albums",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:26:15 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "118"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "8"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"Malam Seribu Malam\",\n        \"artist_id\": 1,\n        \"price\": 27000\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Album",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/albums/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"albums",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Album",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/albums/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"albums",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:27:50 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "55"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "4"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								},
+								{
+									"key": "connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "song",
+			"item": [
+				{
+					"name": "Get Song by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/songs/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"songs",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Song by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/songs/4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"songs",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:40:41 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "128"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "2"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								},
+								{
+									"key": "connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 4,\n        \"album_id\": 4,\n        \"title\": \"Jika Itu\",\n        \"lyrics\": \"Jika itu memang terbaik\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Songs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/songs?limit=2&offset=1&album_id=4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"songs"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "offset",
+									"value": "1"
+								},
+								{
+									"key": "album_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Songs",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/songs",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"songs"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "album_id",
+											"value": "9",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:39:51 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "494"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "4"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"album_id\": 2,\n            \"title\": \"Ada Apa Dengan Mu\",\n            \"lyrics\": \"hooo hanya malam dapat meleburkan segala rasa\"\n        },\n        {\n            \"id\": 2,\n            \"album_id\": 2,\n            \"title\": \"Mungkin Nanti\",\n            \"lyrics\": \"Dan Mungkin Bila Nanti\"\n        },\n        {\n            \"id\": 3,\n            \"album_id\": 4,\n            \"title\": \"Tempat Terindah\",\n            \"lyrics\": \"Dapatkan Tempat Terindah Dalam Mimpimu\"\n        },\n        {\n            \"id\": 4,\n            \"album_id\": 4,\n            \"title\": \"Jika Itu\",\n            \"lyrics\": \"Jika itu memang terbaik\"\n        },\n        {\n            \"id\": 5,\n            \"album_id\": 4,\n            \"title\": \"Laguku\",\n            \"lyrics\": \"Mungkin Hanya Lewat lagi Ini\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get All Songs",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/songs?limit=2&offset=1&album_id=4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"songs"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "2"
+										},
+										{
+											"key": "offset",
+											"value": "1"
+										},
+										{
+											"key": "album_id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:40:19 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "209"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "8"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": [\n        {\n            \"id\": 4,\n            \"album_id\": 4,\n            \"title\": \"Jika Itu\",\n            \"lyrics\": \"Jika itu memang terbaik\"\n        },\n        {\n            \"id\": 5,\n            \"album_id\": 4,\n            \"title\": \"Laguku\",\n            \"lyrics\": \"Mungkin Hanya Lewat lagi Ini\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Song",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Bintang Di Neraka\",\n    \"album_id\": 2,\n    \"lyrics\": \"Ok\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/songs",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"songs"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Song",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Mungkin Nanti\",\n    \"album_id\": 2,\n    \"lyrics\": \"Dan Mungkin Bila Nanti\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/songs",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"songs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:37:36 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "132"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "14"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 2,\n        \"album_id\": 2,\n        \"title\": \"Mungkin Nanti\",\n        \"lyrics\": \"Dan Mungkin Bila Nanti\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Song",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Jika Itu Terbaik\",\n    \"lyrics\": \"JIka itu memang terbaik untuk dirimu\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/songs/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"songs",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Song",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Jika Itu Terbaik\",\n    \"lyrics\": \"JIka itu memang terbaik untuk dirimu\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/songs/4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"songs",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:41:57 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "149"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "11"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 4,\n        \"album_id\": 4,\n        \"title\": \"Jika Itu Terbaik\",\n        \"lyrics\": \"JIka itu memang terbaik untuk dirimu\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Song",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/albums/6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"albums",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Song",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/albums/6",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"albums",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:43:10 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "55"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "5"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								},
+								{
+									"key": "connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "artist",
+			"item": [
+				{
+					"name": "Get Artist by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/artists/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"artists",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Artist by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/artists/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"artists",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:17:01 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "84"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "1"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								},
+								{
+									"key": "connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Peterpan/Noah\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Artists",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "limit",
+								"value": "2",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "offset",
+								"value": "0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/v1/artists?limit=2&offset=0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"artists"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "2"
+								},
+								{
+									"key": "offset",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All Artists",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "limit",
+										"value": "2",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "offset",
+										"value": "0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/v1/artists",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"artists"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "offset",
+											"value": "0",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:17:48 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "162"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "10"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Peterpan/Noah\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Ungu\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Sheila On 7\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Padi\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Get All Artists",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "limit",
+										"value": "2",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "offset",
+										"value": "0",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/v1/artists?limit=2&offset=0",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"artists"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "2"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:18:07 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "109"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "4"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Peterpan/Noah\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Ungu\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create Artist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Asal\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/artists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"artists"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Artist",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Padi\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/artists",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"artists"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:14:36 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "75"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "101"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 4,\n        \"name\": \"Padi\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Artist",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Peterpan/Noah\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/v1/artists/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"artists",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Artist",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Peterpan/Noah\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/artists/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"artists",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:16:45 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "84"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "8"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Peterpan/Noah\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Artist",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/artists/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"artists",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Artist",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/artists/5",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"artists",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Fri, 27 Jan 2023 10:20:01 GMT"
+								},
+								{
+									"key": "content-length",
+									"value": "55"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "10"
+								},
+								{
+									"key": "server",
+									"value": "railway"
+								},
+								{
+									"key": "connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"OK!\",\n    \"errors\": null,\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:4000"
+		}
+	]
+}
